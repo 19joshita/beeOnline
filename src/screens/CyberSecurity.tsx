@@ -2,7 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaShieldAlt, FaLock, FaBug, FaNetworkWired } from "react-icons/fa";
-import "./../uis/cybersecurity.css";
+import "./../uis/cyberSecurity.css";
 
 interface CyberFeature {
   icon: any;

@@ -8,7 +8,6 @@
 }
 
 
-/* image */
 
 .card-img {
   width: 100%;
@@ -17,7 +16,7 @@
 }
 
 
-/* bottom content */
+
 
 .card-body {
   background: white;
@@ -25,7 +24,7 @@
 }
 
 
-/* dot */
+
 
 .dot {
   width: 12px;
@@ -39,7 +38,6 @@
 }
 
 
-/* title */
 
 .card-body h3 {
   margin: 0;

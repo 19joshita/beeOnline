@@ -21,13 +21,12 @@ const Career: React.FC = () => {
 
   return (
     <div className="career-page">
-      {/* Hero Section */}
+     
       <section className="career-hero">
         <h1>Join Our Team</h1>
         <p>At SnippetVault, we are always looking for talented people to grow with us.</p>
       </section>
 
-      {/* Job Openings */}
       <section className="career-jobs">
         {jobs.map((job, idx) => (
           <div className="career-job-card" key={idx}>
@@ -45,7 +44,6 @@ const Career: React.FC = () => {
         ))}
       </section>
 
-      {/* CTA Section */}
       <section className="career-cta">
         <h2>Want to be part of our growing team?</h2>
         <button
