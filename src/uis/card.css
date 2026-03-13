@@ -1,0 +1,50 @@
+.client-card {
+  width: 320px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* image */
+
+.card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+
+/* bottom content */
+
+.card-body {
+  background: white;
+  padding: 20px;
+}
+
+
+/* dot */
+
+.dot {
+  width: 12px;
+  height: 12px;
+
+  border: 2px solid black;
+  border-radius: 50%;
+
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+/* title */
+
+.card-body h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: #444;
+  font-family: sans-serif;
+}

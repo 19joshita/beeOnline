@@ -1,0 +1,147 @@
+.testimonial {
+  display: flex;
+  padding: 40px;
+}
+.testimonial-left {
+  flex: 1;
+  text-align: left;
+  padding-left: 60px;
+}
+.testimonial-left h2 {
+  font-size: 40px;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.testimonial-left p {
+  margin-top: 10px;
+  color: #666;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 100;
+} /* RIGHT */
+.testimonial-right {
+  flex: 1;
+  padding-left: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} /* BIG QUOTE */
+.big-quote {
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  font-size: 180px;
+  color: #eee;
+  z-index: 0;
+} 
+.testimonial-right h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+} 
+.desc {
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+} 
+.small-quote {
+  text-align: center;
+  font-size: 50px;
+  color: #ccc;
+}
+.line {
+  height: 1px;
+  background: #ddd;
+  margin: 0px 0px 12px 0px;
+} 
+.company {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.company img {
+  height: 70px; 
+} 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.nav svg {
+  cursor: pointer;
+  font-size: 18px;
+} 
+@media (max-width:768px) {
+
+.testimonial {
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.testimonial-left {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.testimonial-left h2 {
+  font-size: 26px;
+}
+
+
+/* RIGHT */
+
+.testimonial-right {
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ✅ BIG QUOTE FIX */
+
+.big-quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 110px;
+  color: #eaeaea;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+
+
+.testimonial-right h3,
+.desc,
+.small-quote,
+.line,
+.company,
+.nav {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+.company {
+  justify-content: center;
+}
+
+.nav {
+  justify-content: center;
+}
+
+}

@@ -1,0 +1,139 @@
+.offer-section {
+  background: #f3f4f8;
+  padding: 60px 20px;
+  font-family: Inter, sans-serif;
+
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 24px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.offer-title {
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.title-shape {
+  position: absolute;
+  right: -170px;
+  bottom: -5px;
+  width: 160px;
+}
+.cart-title {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+  white-space: nowrap;   
+}
+
+.offer-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.talk-btn {
+  background: #f4b223;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 17.7px;
+}
+
+/* CARDS */
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    flex: 1 1 250px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+/* HIGHLIGHT CARD */
+.service-card.highlight {
+  background: #f4b223;
+  transform: rotate(-3deg);
+}
+.highlight p {
+  color: #333;
+}
+
+.highlight:hover {
+  transform: rotate(-4deg) translateY(-6px);
+}
+/* CARD HEADER */
+
+.card-header {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  flex-wrap: nowrap;   /* prevents title going to next line */
+}
+.card-header img {
+  width: 40px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+}
+
+.service-card p {
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.learn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+  .offer-title {
+    font-size: 26px;
+    font-weight: 500;
+    display: block;
+    text-align: left;
+  }
+
+  .title-shape {
+    display: none;
+  }
+  .offer-section {
+    margin-top: 0px;
+  }
+
+  .offer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+}

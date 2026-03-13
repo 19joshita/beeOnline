@@ -1,0 +1,177 @@
+/* ---------- Navbar container ---------- */
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+}
+
+.navbar-wrapper {
+  margin: auto;
+  padding: 25px 30px 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------- Left: Logo ---------- */
+.nav-left img {
+  height: 42px;
+  cursor: pointer;
+}
+
+/* ---------- Menu ---------- */
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+}
+
+/* Menu item: label + arrow */
+.menu-item {
+  font-size: 17.7px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 5px; 
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.menu-label {
+  text-align: center;
+}
+
+/* Arrow icon on the right */
+.arrow-icon {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* Dropdown menu for desktop */
+.dropdown {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  min-width: 180px;       /* slightly wider for better spacing */
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow for card effect */
+  list-style: none;        /* remove bullets */
+  padding: 10px 0;         /* spacing inside card */
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 10px 20px;     
+  cursor: pointer;
+  font-size: 16px;
+  font-family: sans-serif;
+  transition: background 0.2s, color 0.2s;
+  border-left: 3px solid transparent; 
+}
+
+.dropdown li:hover,
+.dropdown li.active {      
+  background: #f8f8f8;      
+  color: #000;              
+  border-left: 3px solid #ffb400; 
+  padding-left: 17px;       
+}
+
+/* Remove bullet for dropdown ul */
+.dropdown li::marker {
+  content: "";
+}
+
+/* ---------- Right: Contact button ---------- */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: #ffb400;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 17.7px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: #e0a000;
+}
+
+/* Hamburger (mobile) */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ---------- Mobile menu ---------- */
+.mobile-menu {
+  display: none;
+  background: #fff;
+  padding: 15px 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #eee;
+  z-index: 100;
+}
+
+.mobile-item {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.mobile-dropdown {
+  padding-left: 15px; 
+  border-left: 2px solid #eee;
+  list-style: none;
+}
+
+.mobile-dropdown div {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.mobile-dropdown div:hover,
+.mobile-dropdown div.active {
+  background: #f8f8f8;
+  color: #000;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

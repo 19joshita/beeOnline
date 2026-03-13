@@ -1,0 +1,62 @@
+/* Hero Section */
+.svc-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fffbf0;
+}
+
+.svc-hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.svc-hero p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.svc-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.svc-cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff5e5;
+}
+
+.svc-cta h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.svc-cta-btn {
+  background: #ffb400;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.svc-cta-btn:hover {
+  background: #e0a000;
+}
+
+@media (max-width: 1000px) {
+  .svc-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .svc-card {
+    max-width: 90%;
+  }
+}

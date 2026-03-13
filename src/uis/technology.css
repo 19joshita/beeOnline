@@ -1,0 +1,67 @@
+.tech {
+  background: white;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.tech h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.tech h2 span {
+  color: #f5a800;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  margin: auto;
+  align-items: center;
+}
+
+.tech-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-card img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:768px) {
+
+.tech {
+  padding: 40px 10px;
+}
+
+.tech h2 {
+  font-size: 26px;
+}
+
+.tech-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+
+.tech-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.tech-card {
+  min-width: 160px;
+}
+
+.tech-card img {
+  width: 100%;
+}
+
+}
